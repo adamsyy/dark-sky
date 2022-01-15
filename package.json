@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "geocoding": "^1.0.5",
     "request": "^2.88.0"
   }
 }
