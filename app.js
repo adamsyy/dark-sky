@@ -6,17 +6,17 @@ var arguments = process.argv;
 
 if (arguments[2]) {
     arguments[2] = arguments[2].toString()
-    geocode(arguments[2], (error, data) => {
+    geocode(arguments[2], (error, {latitude,longitude,location}={}) => {
         if (error) {
             return console.log('location not found')
         }
 
-        forecast(data.latitude, data.longitude, (error, forecastdata) => {
+        forecast(latitude, longitude, (error, forecastdata) => {
             if (error) {
                 return console.log('some error')
             }
-            console.log(forecastdata)
-            console.log(data.location)
+            console.log(forecastdata.current)
+            console.log(location)
         })
 
     })
