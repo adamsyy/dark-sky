@@ -4,6 +4,7 @@ Users can enter the desired city name via the terminal using commands like node 
 </br>
 Example: node app.js cochin
 </br>
+</br>
 Sample output:</br>
 weather_descriptions:'Mist'  </br>
   wind_speed: 4,  </br>
