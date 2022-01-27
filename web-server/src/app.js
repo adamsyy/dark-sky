@@ -1,19 +1,21 @@
-const express=require('express')
-const app=express()
+const path = require('path')
+const express = require('express')
+const app = express()
+const pubdirpath = path.join(__dirname, '../public');
 
-app.get('',(req,res)=>{
-    res.send('eh working ahne')
+
+app.use(express.static(pubdirpath))
+ 
+app.get('/about', (req, res) => {
+
 })
-app.get('/about',(req,res)=>{
-    res.send('<h1>About</h1>')
-})
-app.get('/weather',(req,res)=>{
+app.get('/weather', (req, res) => {
     res.send({
-        'weather':'weather'
+        'weather': 'weather'
     })
 
 })
 
-app.listen(3000,()=>{
+app.listen(3000, () => {
     console.log('server working')
 })
