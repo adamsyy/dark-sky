@@ -2,6 +2,7 @@ const express=require('express')
 const app=express()
 
 app.get('',(req,res)=>{
-    console.log('working ahne')
+    res.send('eh working ahne')
 })
-///
+
+app.listen(3000)
