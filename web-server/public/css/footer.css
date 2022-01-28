@@ -1,0 +1,38 @@
+footer {
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right, #00001a, #00004d);
+    background: linear-gradient(to right, #00001a, #00004d);
+    min-height: 100vh;
+    font-family: 'Sanchez', serif
+}
+
+#button-addon1 {
+    color: #ffc371
+}
+
+i {
+    color: #0000cc;
+    font-size: 20px
+}
+
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic
+}
+
+.form-control.shadow-0:focus {
+    box-shadow: none
+}
+
+.display-3 {
+    font-family: 'Sanchez', serif
+}
+
+p {
+    font-family: 'Tajawal', sans-serif
+}
+
+.lead {
+    font-family: 'Sanchez 200', serif
+}
