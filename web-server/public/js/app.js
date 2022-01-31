@@ -1,20 +1,33 @@
 console.log('load aaye')
 
-fetch('http://localhost:3000/weather?address=thiruvalla').then((response)=>{
+const weatherform=document.querySelector('form')
+const searchElr=document.querySelector('input')
+const messageone=document.querySelector('#p1')
+const messagetwo=document.querySelector('#p2')
+messageone.textContent=''
+
+weatherform.addEventListener('submit',(e)=>{
+    const location=searchElr.value; 
+    e.preventDefault()
+if(!location){
+    return console.log('no location provided')
+}
+messageone.textContent='loading'
+messagetwo.textContent=''
+fetch('http://localhost:3000/weather?address='+location).then((response)=>{
 
     response.json().then((data)=>{
         if(data.error){
-            console.log('full error')
+             console.log('full error')
         }
         else{
+            messageone.textContent=data.location
+
+messagetwo.textContent=data.forecast
             console.log(data)
         }
         
     })
 })  
 
-const weatherform=document.querySelector('form')
-weatherform.addEventListener('submit',(e)=>{
-    e.preventDefault()
-console.log('settesth')
 })
