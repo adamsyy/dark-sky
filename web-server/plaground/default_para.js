@@ -1,4 +1,5 @@
-const greeter=(name)=>{
+const greeter=(name='adam')=>{
 console.log(name)
 }
-greeter('adam')
+greeter('pop')
+ 

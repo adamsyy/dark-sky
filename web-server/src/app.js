@@ -46,7 +46,7 @@ app.get('/weather', (req, res) => {
  if(!req.query.address){
      return res.send('no address provided')
  }
- geocode(req.query.address,(error,{latitude,longitude,location})=>{
+ geocode(req.query.address,(error,{latitude,longitude,location}={})=>{
      if(error){
          res.send('location not avaialable');
      }
