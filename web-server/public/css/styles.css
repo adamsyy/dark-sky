@@ -14,14 +14,14 @@ img{
 #p1{
     position: absolute;
   left: 50%;
-  top: 57%;
+  top: 60%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 #p2{
     position: absolute;
   left: 50%;
-  top: 60%;
+  top: 63%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
