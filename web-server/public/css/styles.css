@@ -12,6 +12,7 @@ img{
   transform: translate(-50%, -50%);
 }
 #p1{
+  font-size: 25px;
     position: absolute;
   left: 50%;
   top: 60%;
@@ -21,7 +22,7 @@ img{
 #p2{
     position: absolute;
   left: 50%;
-  top: 63%;
+  top: 65%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
