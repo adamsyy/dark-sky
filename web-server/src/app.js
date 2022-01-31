@@ -47,16 +47,24 @@ app.get('/weather', (req, res) => {
      return res.send('no address provided')
  }
  geocode(req.query.address,(error,{latitude,longitude,location})=>{
+     if(error){
+         res.send('location not avaialable');
+     }
 console.log(latitude)
-forecast(latitude,longitude,(error,body)=>{
-    console.log(body)
+forecast(latitude,longitude,(error2,body)=>{
+    if(error2){
+        res.send('not able to fetch the weather ');
+    }
+   
+    res.send({
+   forecast:"It is currently "+body.current.weather_descriptions[0]+" with "+body.current.temperature+" degree temperature",
+   location,
+   address:req.query.address
+    })
 })
  })
  
- res.send({
-     "latitude":"latitude",
-     "longitude":"longitude"
- })
+
 })
 
 
