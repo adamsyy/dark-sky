@@ -4,6 +4,7 @@ const express = require('express')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const app = express()
+const port=process.env.PORT ||3000
 
 
 //define paths for express and views
@@ -68,6 +69,6 @@ forecast(latitude,longitude,(error2,body)=>{
 })
 
 
-app.listen(3000, () => {
-    console.log('server working')
+app.listen(port, () => {
+    console.log('server workings')
 })
