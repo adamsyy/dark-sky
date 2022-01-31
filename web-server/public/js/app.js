@@ -10,24 +10,33 @@ weatherform.addEventListener('submit',(e)=>{
     const location=searchElr.value; 
     e.preventDefault()
 if(!location){
+    messageone.textContent='please provide a location'
     return console.log('no location provided')
 }
 messageone.textContent='loading'
 messagetwo.textContent=''
 fetch('http://localhost:3000/weather?address='+location).then((response)=>{
-
-    response.json().then((data)=>{
-        if(data.error){
-             console.log('full error')
-        }
-        else{
+    if(!response.error){
+        response.json().then((data)=>{
+     
+    
             messageone.textContent=data.location
-
-messagetwo.textContent=data.forecast
+    
+    messagetwo.textContent=data.forecast
             console.log(data)
-        }
+        
         
     })
+
+       
+   }
+   else{
+       return;
+    messageone.textContent='wrong '
+    
+    messagetwo.textContent=''
+   }
+
 })  
 
 })
