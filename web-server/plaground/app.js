@@ -6,7 +6,7 @@
 function func1() {
     return new Promise(function (resolve, reject) {
         setTimeout(() => {
-            const error = false;
+            const error = true;
             if (!error) {
                 console.log('promise resolved')
                 resolve();
@@ -22,6 +22,6 @@ function func1() {
 
 func1().then(function (params) {
    console.log('thanks for solving') 
-}).catch(function(){
-    console.log('sad aaki')
+}).catch(function(error){
+    console.log(error)
 })
