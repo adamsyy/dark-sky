@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.2",
     "geocoding": "^1.0.5",
     "hbs": "^4.2.0",
     "nodemon": "^2.0.15",
