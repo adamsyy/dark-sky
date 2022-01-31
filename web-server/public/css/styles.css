@@ -22,7 +22,7 @@ img{
 #p2{
     position: absolute;
   left: 50%;
-  top: 65%;
+  top: 70%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
