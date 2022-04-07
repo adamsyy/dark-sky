@@ -1,6 +1,6 @@
 Get the weather information of any place you want! 
 </br>
-Users can enter the desired city name, build using express+nodejs❤.
+Users can enter the desired city name, build using express+nodejs ❤.
 </br>
 Ignore the UI part😥
 </br>
