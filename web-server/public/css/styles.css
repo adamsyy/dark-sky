@@ -1,32 +1,85 @@
-h1{
-    color: yellow;
+h1 {
+  color: yellow;
 }
-img{
-    width: 250px;
-}
-#form1{
-    position: absolute;
+
+#form1 {
+  position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#p1{
+
+#p1 {
   font-size: 25px;
-    position: absolute;
+  position: absolute;
   left: 50%;
   top: 60%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#p2{
-    position: absolute;
+
+#p2 {
+  position: absolute;
   left: 51%;
   top: 70%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-p1{
+
+p1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#heading {
+  font-size: 45px;
+  color: rgb(15, 25, 31);
+  margin-left: 0px;
+  letter-spacing: 3px;
+}
+
+
+#photo {
+  position: relative;
+  left: 42%;
+  height: 220px;
+  box-shadow: 3px 3px 15px rgb(48, 47, 47);
+  border-radius: 3px;
+}
+
+.icons {
+  height: 27px;
+  width: 27px;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.icons:hover {
+  height: auto;
+  width: 33px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+h4{
+  position: relative;
+  margin-left: 1%;
+  padding-top: 1%;
+}
+
+.help-info {
+  position: relative;
+ margin-left: 25%;
+  background-color: rgb(241, 237, 234);
+  width: fit-content;
+  margin-top: 42px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgb(19, 5, 5);
+  padding: 7.5px 12px 2px 2px;
 }
 
