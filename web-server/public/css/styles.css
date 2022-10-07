@@ -55,7 +55,7 @@ p1 {
   margin-left: 12px;
 }
 
-.icons:hover{
+.icons:hover {
   height: auto;
   width: 33px;
 }
@@ -65,3 +65,21 @@ p1 {
   justify-content: center;
   margin-top: 22px;
 }
+
+h4{
+  position: relative;
+  margin-left: 1%;
+  padding-top: 1%;
+}
+
+.help-info {
+  position: relative;
+ margin-left: 25%;
+  background-color: rgb(241, 237, 234);
+  width: fit-content;
+  margin-top: 42px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgb(19, 5, 5);
+  padding: 7.5px 12px 2px 2px;
+}
+
