@@ -1,4 +1,5 @@
 Get the weather information of any place you want! 
+Remain updated!!
 </br>
 Users can enter the desired city name, build using express+nodejs ❤.
 </br>
