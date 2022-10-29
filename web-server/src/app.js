@@ -48,7 +48,9 @@ app.get('/weather', (req, res) => {
     const address = req.query.address
 
  if(!address){
-     return res.send('no address provided')
+     return res.send({
+        error: "You must enter address in search box"
+    })
  }
  geocode(address,(error,{latitude,longitude,location}={})=>{
      if(error){
