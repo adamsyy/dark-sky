@@ -70,5 +70,5 @@ forecast(latitude,longitude,(error2,body)=>{
 
 
 app.listen(port, () => {
-    console.log('server workings')
+    console.log("Server is up and running on port: ",port);
 })
