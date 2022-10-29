@@ -13,7 +13,7 @@ if (arguments[2]) {
 
         forecast(latitude, longitude, (error, forecastdata) => {
             if (error) {
-                return console.log('some error')
+                return console.log('Error 404!')
             }
             console.log(forecastdata.current)
             console.log(location)
